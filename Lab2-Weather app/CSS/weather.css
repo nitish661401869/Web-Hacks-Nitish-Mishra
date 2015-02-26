@@ -1,0 +1,48 @@
+
+.container
+{
+  margin-top: 25px;
+  margin-right: ;
+  width: 60%;
+  padding-right: 30px;
+  max-width: 100%;
+   
+}
+
+.hidden{
+visibility:hidden;
+}
+
+.panel
+{
+   box-shadow: 10px 10px 5px #888888;
+   padding-left: 25px;
+   padding-right: 25px;
+   padding-top:15px;
+   background-color: lavender;
+}
+
+#currTemp
+{
+   padding-right:10px;
+   
+}
+
+#desc, #maxTemp, #wind, #humid
+{
+  margin-top:0px;
+  padding:0px;
+}
+
+#row2
+{
+  margin-bottom: 0px;
+}
+
+#loading {
+    position: absolute; 
+	width: 100%; height: 100%;
+	background-image: url('loading3.gif');
+	background-repeat: no-repeat; background-position: center; background-color: black;
+}
+
