@@ -1,0 +1,16 @@
+<br/><br/><p> Filter Name: <input type="text" ng-model="customFilter.name">
+
+    <table class="table table-hover table-bordered">
+	  <tr>
+	     <th ng-click="doSort('name')">Name</th>
+		 <th ng-click="doSort('age')">Age</th>
+		 <th ng-click="doSort('DOB')">DOB</th>
+	  </tr>
+	  <tr data-ng-repeat="person in data | orderBy:sortBy:reverse | filter:customFilter">
+	     <td>{{person.name}}</td>
+		 <td>{{person.age}}</td>
+		 <td>{{person.DOB | date:longDate}}</td>
+	  </tr>
+	</table>
+	
+	<div>total people: {{data.length}} </div>

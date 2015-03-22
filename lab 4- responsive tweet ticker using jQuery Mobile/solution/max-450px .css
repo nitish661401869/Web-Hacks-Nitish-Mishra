@@ -1,0 +1,57 @@
+
+
+
+#main_ticker
+{
+   width:800px; height:500px; overflow:auto; 
+  
+}
+
+#tag_ticker
+{
+
+   width:500px; height:500px; overflow:hidden; 
+   
+}
+
+#tag{
+   background-color: 	#FFFF4A;
+   margin: 3px;
+   width:300px; height:100px; overflow:auto; border:2px solid black;
+   text-align:center;
+   line-height:90px;
+   border-radius: 15px;
+   overflow: hidden;
+ 
+}
+	
+#ticker_table
+{
+   background-color: #00CCFF;
+   width:300px; height:100px; overflow:auto; border:2px solid black;
+   border-radius: 20px;
+}
+
+#img
+{
+   padding-left: 2px;
+}
+
+
+
+#title
+{
+   font-family: lucida console;
+   font-size: 30px;
+}
+
+#dummy{
+width:120px; height:50px; overflow:hidden; 
+}
+
+
+	
+
+
+
+

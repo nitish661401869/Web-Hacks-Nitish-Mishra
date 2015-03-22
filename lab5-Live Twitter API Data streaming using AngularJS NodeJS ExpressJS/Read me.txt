@@ -1,0 +1,14 @@
+To execute:
+
+1) open command prompt and go to the '/lab5-Nitish Mishra/solution' directory through which this assignment is being submitted
+
+2) execute tweets.js. The server is created and listening on port 3000
+
+3) http://localhost:3000/
+
+
+Approach:
+
+I have used the Express framework on top of the Node environement to create this application. The 'Swig' templating engine has been used to render the  HTML pages. I found the swig engine more intuitive to use than the default JADE engine. EJS engine was also another option that I will probably experiment with in the future labs.
+
+The front end is driven by angularJS. Two-way data binding allows the user to enter two parameters- the tweet count and the search query, which is automatically bound into the controller using the $scope object. These two parameters are then passed to the backend Node server using Angular's http service. In the backend, Twitter API is invoked to fetch the twitter data. This is then sent back to the front end and is served to the user.

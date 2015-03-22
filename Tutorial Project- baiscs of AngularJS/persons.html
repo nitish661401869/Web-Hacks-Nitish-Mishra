@@ -1,0 +1,22 @@
+<br><h1>Customer Information System</h1>
+<p> Filter Name: <input type="text" ng-model="customFilter.name"></input> </p>
+<div>count: {{count}}</div>
+
+<button ng-click="getCount()">Increment count</button>
+
+    <table class="table table-hover table-bordered">
+	  <tr>
+	     <th class="danger" ng-click="doSort('name')">Name</th>
+		 <th class="danger" ng-click="doSort('age')">Age</th>
+		 <th class="danger" ng-click="doSort('DOB')">DOB</th>
+         <th class="danger">View Orders</th>
+	  </tr>
+	  <tr data-ng-repeat="person in data | orderBy:sortBy:reverse | filter:customFilter">
+	     <td>{{person.name}}</td>
+		 <td>{{person.age}}</td>
+		 <td>{{person.DOB | date:longDate}}</td>
+          <td><a href="#/orders/{{person.id}}"><button type="button" class="btn btn-xs btn-success"><span class="glyphicon glyphicon-list-alt"> View Order</span></button></a></td>
+	  </tr> 
+	</table>
+	
+	<div>total people: {{data.length}} </div> 

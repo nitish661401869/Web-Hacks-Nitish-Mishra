@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+     <head>
+
+         <title>Twitter Ticker</title>
+		 <meta name="viewport" content="width=device-width, initial-scale=1">
+         <!--<link rel="stylesheet" type="text/css" href="style.css">-->
+		 <link rel="stylesheet" media="(max-width: 830px)" href="max-830px.css">
+		 <link rel="stylesheet" media="(min-width: 830px)" href="min-830px.css">
+		 <link rel="stylesheet" media="(max-width: 750px)" href="max-750px.css">
+		 <link rel="stylesheet" media="(max-width: 650px)" href="max-650px.css">
+		 <link rel="stylesheet" media="(max-width: 550px)" href="max-550px.css">
+		 <link rel="stylesheet" media="(max-width: 450px)" href="max-450px.css">
+		 <link rel="stylesheet" media="(max-width: 390px)" href="max-350px.css">
+		 <link rel="stylesheet" media="(max-width: 250px)" href="max-250px.css">
+		 <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+		
+		 
+     </head>
+	 
+	 <body>
+	   <div data-role="page" id="main_page"/>
+	  
+	     <div data-role="header" id="title"><img id="logo" src="twitter_64.png"></img>twitter ticker</div>           <!--the title element-->
+	 
+	      <div data-role="main" class="ui-content">
+		       <div class="ui-grid-a ui-content ui-responsive" id="main">
+			       <div class="ui-block-a" id="main_ticker"></div> 
+				   <div class="ui-block-b" id="tag_ticker">
+				       <div class="ui-grid-solo" id="tag_grid">
+					         <div class="ui-a" id="tag_block"></div>
+				       </div> 
+				    
+			       </div>
+		       </div>
+		  
+		   <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+		   <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		   <script type="text/javascript" src="tweets_parse_mobile.js"> </script>
+		</div>
+	 </body>
+	 
+</html>
+	 
+	 
